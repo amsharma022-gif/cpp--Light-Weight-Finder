@@ -17,12 +17,12 @@ One ball among 8 is lighter. Find it using only 2 weighings!
 
 ### Using Command Prompt (Windows)
 1. Open Command Prompt in the file folder
-2. Compile: `g++ ball_weight_finder.cpp -o game.exe`
-3. Run: `game.exe`
+2. Compile: `g++ ball_weight_finder.cpp -o ball_weight_finder.exe`
+3. Run: `ball_weight_finder.exe`
 
 ### Using Terminal (Linux/Mac)
-1. Compile: `g++ ball_weight_finder.cpp -o game`
-2. Run: `./game`
+1. Compile: `g++ ball_weight_finder.cpp -o ball_weight_finder`
+2. Run: `./ball_weight_finder`
 
 ## Concepts Used
 - Random number generation (rand, srand)
