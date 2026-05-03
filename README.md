@@ -46,7 +46,7 @@ This variance allows users to choose the most efficient algorithm based on their
 - Insight into optimization techniques for data retrieval.
 
 ## Author Information
-- **Name:** A. Sharma
+- **Name:** Amrit Sharma
 - **GitHub:** [amsharma022-gif](https://github.com/amsharma022-gif)
 - **Email:** example@example.com
 
