@@ -1,0 +1,16 @@
+# C++ build artifacts
+*.exe
+*.o
+*.out
+.vscode/
+build/
+
+# Other standard C++ excludes
+*.class
+*.iml
+*.log
+*.dSYM/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
