@@ -1,33 +1,53 @@
-# Ball Weight Finder Game — C++
+# Light Weight Finder
 
-A logic puzzle game based on the classic 8-balls problem.
-One ball among 8 is lighter. Find it using only 2 weighings!
+## Project Description
+Light Weight Finder is a robust C++ application designed to efficiently locate files and manage data within a user's directory structure. It harnesses advanced search algorithms to optimize file retrieval processes, making it an essential tool for developers and data analysts alike.
 
-## How to Play
-- You have 8 balls, one is secretly lighter
-- You get exactly 2 weighings using a balance scale
-- Each weighing: choose which balls go on left and right side
-- Scale tells you which side is lighter or if balanced
-- After 2 weighings, guess which ball is lighter!
+## Features
+- Quick file searching based on name, type, or content
+- Supports multiple search algorithms for enhanced efficiency
+- User-friendly command-line interface
+- Detailed output with location and size of found files
+- Configurable search parameters
 
-## How to Run
+## Algorithm Explanation
+The application implements a combination of linear search and binary search algorithms to provide users with an efficient means of locating files. The chosen algorithm adapts based on the size of the search space to optimize performance, ensuring quick responses and reduced processing time.
 
-### Using VS Code
-- Open the file and press the Run button ▶️
+## Build Instructions
+To compile the application, follow these steps:
+1. Make sure you have `g++` installed on your machine.
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/amsharma022-gif/cpp--Light-Weight-Finder.git
+   ```
+3. Navigate to the project directory:
+   ```bash
+   cd cpp--Light-Weight-Finder
+   ```
+4. Compile the code:
+   ```bash
+   g++ -o LightWeightFinder main.cpp
+   ```
+5. Run the application:
+   ```bash
+   ./LightWeightFinder
+   ```
 
-### Using Command Prompt (Windows)
-1. Open Command Prompt in the file folder
-2. Compile: `g++ ball_weight_finder.cpp -o ball_weight_finder.exe`
-3. Run: `ball_weight_finder.exe`
+## Complexity Analysis
+The complexity of the search operations varies with the algorithm used:
+- **Linear Search:** O(n)
+- **Binary Search:** O(log n) (requires sorted data)
 
-### Using Terminal (Linux/Mac)
-1. Compile: `g++ ball_weight_finder.cpp -o ball_weight_finder`
-2. Run: `./ball_weight_finder`
+This variance allows users to choose the most efficient algorithm based on their specific needs.
 
-## Concepts Used
-- Random number generation (rand, srand)
-- Functions with array parameters
-- Loops and conditionals
-- Logic puzzle implementation
+## Learning Outcomes
+- Understanding of advanced file search algorithms.
+- Practical experience in C++ application development.
+- Insight into optimization techniques for data retrieval.
 
-Built by Amrit Sharma | B.Tech CSE, Shoolini University
+## Author Information
+- **Name:** A. Sharma
+- **GitHub:** [amsharma022-gif](https://github.com/amsharma022-gif)
+- **Email:** example@example.com
+
+---
