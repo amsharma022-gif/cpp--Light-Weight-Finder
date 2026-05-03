@@ -47,6 +47,20 @@ bool hasCrossDuplicate(int leftBalls[], int leftCount, int rightBalls[], int rig
     return false;
 }
 
+int safeInput() {
+    int value;
+    while (true) {
+        cin >> value;
+        if (cin.fail()) {
+            cin.clear(); // clear error flag
+            cin.ignore(1000, '\n'); // discard bad input
+            cout << "Invalid! Please enter a number: ";
+        } else {
+            return value;
+        }
+    }
+}
+
 int main() {
     srand(time(0));
     int lightBall = rand() % 8 + 1;
@@ -58,24 +72,28 @@ int main() {
     cout << "But one of them is lighter than the others.\n" << endl;
 
     for (int weighing = 1; weighing <= 2; weighing++) {
-        cout << "--- Weighing " << weighing << " ---" << endl;
+        cout << "Weighing " << weighing << ": " << endl;
         int leftBalls[8], leftCount = 0;
         int rightBalls[8], rightCount = 0;
 
         // Get left side input with validation
         cout << "How many balls on left side? ";
-        cin >> leftCount;
+        leftCount = safeInput();
         do {
             cout << "Enter ball numbers for left side: " << endl;
-            for (int i = 0; i < leftCount; i++) cin >> leftBalls[i];
+            for (int i = 0; i < leftCount; i++) {
+                leftBalls[i] = safeInput();
+            }
         } while (!isValidInput(leftBalls, leftCount));
 
         // Get right side input with validation
         cout << "How many balls on right side? ";
-        cin >> rightCount;
+        rightCount = safeInput();
         do {
             cout << "Enter ball numbers for right side: " << endl;
-            for (int i = 0; i < rightCount; i++) cin >> rightBalls[i];
+            for (int i = 0; i < rightCount; i++) {
+                rightBalls[i] = safeInput();
+            }
         } while (!isValidInput(rightBalls, rightCount));
 
         // Check if same ball is on both sides
@@ -112,7 +130,7 @@ int main() {
     // Final guess
     int guess;
     cout << "\nNow, can you guess which ball is lighter? ";
-    cin >> guess;
+    guess = safeInput();
 
     if (guess == lightBall) {
         cout << "Congratulations! You found the lighter ball!" << endl;
