@@ -27,11 +27,11 @@ To compile the application, follow these steps:
 4. Compile the code:
    ```bash
    g++ -o LightWeightFinder main.cpp
-   ```
+   
 5. Run the application:
    ```bash
    ./LightWeightFinder
-   ```
+   
 
 ## Complexity Analysis
 The complexity of the search operations varies with the algorithm used:
@@ -48,6 +48,4 @@ This variance allows users to choose the most efficient algorithm based on their
 ## Author Information
 - **Name:** Amrit Sharma
 - **GitHub:** [amsharma022-gif](https://github.com/amsharma022-gif)
-- **Email:** example@example.com
-
----
+- **Email:** amsharma022@gmail.com
